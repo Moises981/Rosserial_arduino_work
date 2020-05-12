@@ -15,3 +15,15 @@ Rosserial_windows
 Rosserial_embededlinux
 Rosserial_mbed
 Rosserial_tivac
+
+Para trabajar con rosserial_arduino debemos añadir los paquetes de rosserial mediante la clonacion del git:
+https://github.com/ros-drivers/rosserial
+
+Una vez copiado compilamos el catkin_ws o el espacio de trabajo de ROS.
+![asus@asus-ROG-Strix-G531GT-G531GT: ~-Escritorio-Rosserial_arduino_work_015](https://user-images.githubusercontent.com/59718261/81739850-a6d5f600-9461-11ea-805f-5f5f9ad47580.png)
+
+Creamos un paquete de ROS para poder crear nuestro topic y subscriber , en este ejemplo lo que quiero hacer es :
+Usar el arduino como topic publisher, para publicar el estado de sus pines y usar ROS como subscriber a esos pines.
+Usar el ROS como publisher para poder controlar los puertos PWM del arduino
+
+

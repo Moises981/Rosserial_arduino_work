@@ -62,7 +62,16 @@ Ahora ejecutemos el launch topic_pub.launch para ello se usa el siguiente comand
 
 Despues de esto el led deberia estar parpadeando a razon de un segundo a no ser que se cambie el valor del retard.data en el publisher.
 
-
+Consejos para optimizar el codigo en arduino:
+Usar variables que ocupen el espacio necesario , es decir si necesitas una variable que solo posee dos estados , entonces es recomendable usar un bool en vez de un int , ya que estos ocupan mucha mas memoria. 
+No usar la comunicacion serial de arduino (Serial.print) ya que este tambien ocupa espacio de memoria innecesario.
+Utilizar constantes en vez de variables es decir usar:
+#define LED 13 #CONSUME MENOS MEMORIA
+int led=13     #CONSUME MAS MEMORIA INNECESARIO
+Reducir y hacer mas simple el codigo , ejemplos:
+C=C+1;
+C++;
+Es recomendable crear funciones para reutilizar codigo.
 
 
 
